@@ -1,26 +1,27 @@
-const array = [
-    'vlad', 10, true, null, 'cow', false, 'value', 'value2', 'value3',
-    ['Ann', 'Ahs', 'John', 'An2', 'Ah2', 'Joh2'],
-    {
-        userName: 'Alex',
-        age: 19
-    }
+// let obj = {
+//   userName: 'Vladimir',
+//   age: 10,
+// };
+//
+// console.log(obj, obj.userName, typeof obj)
+// console.log(obj['age'], obj.age)
+//
+
+
+
+// let arr2 = [[2, 3, 4], [2, 3, 4], [2, 3, 4], [2, 3, 4]];
+// console.log(arr2)
+// console.log(arr2[2][1])
+
+
+let arr = [
+    1, 'vova', true, null, undefined, {name: 'Vladimir'}, [2, 3, 4],
+    1, 'vova', true, null, undefined, {name: 'Vladimir'}, [2, 3, 4],
+    1, 'vova', true, null, undefined, {name: 'Vladimir'}, [2, 3, 4],
 ];
+console.log(arr, typeof arr);
+console.log(arr[3]);
+console.log(arr)
+console.log(arr.length)
 
-let arr_length = array.length;
-let last_element_index = arr_length - 1;
-
-let example = array[array.length - 2];
-example = example[example.length - 1];
-
-
-// console.log(example);
-
-
-const arr2 = [];
-
-console.log('Before update', arr2)
-
-arr2.push('Dima');
-
-console.log('After Update', arr2)
+console.log(arr[arr.length - 1])

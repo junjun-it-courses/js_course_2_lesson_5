@@ -7,6 +7,7 @@
 
 for (let i = 0; i < 10; i++) {
     console.log(i)
+
     // если true, пропустить оставшуюся часть тела цикла
     if (i % 2 === 0) continue; // reverse !==
 

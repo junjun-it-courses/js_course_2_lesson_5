@@ -7,11 +7,12 @@
 
 // do...while cycle example
 
-let i = 0;
-do {
-    alert( i );
-    i++;
-} while (i < 3);
+// let i = 0;
+// do {
+//     alert( i );
+//     i++;
+// } while (i < 3);
+
 
 // example 2
 

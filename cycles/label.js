@@ -1,13 +1,16 @@
 // Метки для break и continue
-
+//
 // outer: for (let i = 0; i < 3; i++) {
 //
-//     for (let j = 0; j < 3; j++) {
+//     // console.log('I', i)
 //
+//     for (let j = 0; j < 3; j++) {
+//         // console.log("J", j)
 //         let input = prompt(`Значение на координатах (${i},${j})`, '');
 //
 //         // если пустая строка или Отмена, то выйти из обоих циклов
 //         if (!input) break outer; // (*)
+//         // if (!input) break; // (*)
 //
 //         // сделать что-нибудь со значениями...
 //     }
@@ -57,7 +60,10 @@ const buildings = [
     ],
 ]
 
+// console.log(buildings);
+
 buil: for(let b = 0; b <= buildings.length - 1; b++) {
+    console.log('-----------');
     //b - single building: отдельное здание
     let current_building = buildings[b];
     console.log('Здание: ', b + 1);
@@ -65,16 +71,14 @@ buil: for(let b = 0; b <= buildings.length - 1; b++) {
     for (let f = 0; f <= current_building.length - 1; f++) {
         //f - single floor: Отдельный этаж
         let current_floor = current_building[f];
-        console.log('Этаж: ', f + 1);
+        console.log('-Этаж: ', f + 1);
 
         for(let a = 0; a <= current_floor.length - 1; a++) {
 
-            console.log('Квартира ', a)
-            if(b === 0 && f === 1 && a === 2) {
-                break buil;
-            }
-
-
+            console.log('--Квартира ', a+1)
+            // if(b === 0 && f === 1 && a === 2) {
+            //     break buil;
+            // }
 
         }
 
